@@ -12,15 +12,30 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@popperjs/core": "^2.9.1",
+    "bootstrap": "^4.6.0",
     "gatsby": "^3.0.1",
+    "jquery": "^3.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-easy-emoji": "^1.4.0",
     "react-headroom": "^3.1.0",
+    "react-lottie": "^1.2.3",
     "react-reveal": "^1.2.2",
     "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/react": "^6.1.21",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.1"
   }
 }

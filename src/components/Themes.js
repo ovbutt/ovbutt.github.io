@@ -10,3 +10,9 @@ export const darkTheme = {
   toggleBorder: "#6B8096",
   background: "#999",
 };
+
+export const colors = {
+  dark1: "#363537",
+  dark2: "#353353",
+  light: "#ffffff",
+};

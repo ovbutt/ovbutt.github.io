@@ -1,6 +1,6 @@
-import React, {createContext} from "react";
+import React from "react";
 
-const StyleContext = createContext();
+const StyleContext = React.createContext();
 
 export const StyleProvider = StyleContext.Provider;
 export const StyleConsumer = StyleContext.Consumer;

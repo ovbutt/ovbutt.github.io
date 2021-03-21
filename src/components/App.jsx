@@ -2,17 +2,14 @@ import React, { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./globalStyles";
 import { lightTheme, darkTheme } from "./Themes";
-import { Footer } from "./Footer";
-import { Header } from "./Header";
+import { Footer } from "./Footer/Footer";
+import { Header } from "./Header/Header";
 import { StyleProvider } from "../contexts/StyleContext";
+import { Intro } from "./Intro/Intro";
+import { Skills } from "./Skills/Skills";
 
 const App = () => {
   const [isDark, setIsDark] = useState(false);
-  const [theme, setTheme] = useState("light");
-
-  const themeToggler = () => {
-    isDark ? setIsDark(true) : setIsDark(false);
-  };
 
   useEffect(() => {
     if (localStorage.getItem("isDark") === null) {
@@ -32,6 +29,8 @@ const App = () => {
         <>
           <GlobalStyles />
           <Header />
+          <Intro />
+          <Skills />
           <Footer />
         </>
       </ThemeProvider>
